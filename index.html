@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Aggregator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📰 News Aggregator</h1>
+    <button id="toggleTheme">🌙</button>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+    <div class="buttons">
+      <button onclick="getNews('general')">General</button>
+      <button onclick="getNews('technology')">Technology</button>
+      <button onclick="getNews('business')">Business</button>
+      <button onclick="getNews('sports')">Sports</button>
+    </div>
+  </div>
+
+  <div id="newsContainer" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
